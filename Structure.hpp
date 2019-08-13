@@ -2,13 +2,14 @@
 #ifndef STRUCTURE_HPP
 #define STRUCTURE_HPP
 
-#include "Amxstring.hpp"
-#include "Enums.h"
 #include <string>
 #include <map>
 
+#include "Amxstring.hpp"
+#include "Enums.h"
 
-class Structure {
+class Structure
+{
 private:
 	Amxstring* m_className;
 	std::map<std::string, EntityDataType> m_attributeList;

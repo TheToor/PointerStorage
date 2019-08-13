@@ -1,16 +1,18 @@
 #ifndef ARRAY_HPP
 #define ARRAY_HPP
 
-#include "ArrayItem.hpp"
-#include "Enums.h"
-
+#include <string>
 #include <vector>
 #include <algorithm>
 
-namespace lscrp {
+#include "ArrayItem.hpp"
+#include "Enums.h"
 
+namespace lscrp
+{
 // int, float, string
-class Array {
+class Array
+{
 private:
 	std::vector<ArrayItem*> m_list;
 	EntityDataType m_entityDataType;

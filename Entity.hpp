@@ -1,10 +1,10 @@
 #ifndef ENTITY_HPP
 #define ENTITY_HPP
 
+#include <map>
+
 #include "EntityInfo.hpp"
 #include "Structure.hpp"
-
-#include <map>
 
 class Entity {
 private:

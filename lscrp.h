@@ -1,11 +1,11 @@
 #ifndef LSCRP_H
 #define LSCRP_H
 
-#include "..\SDK\amx\amx.h"
-#include "..\SDK\plugincommon.h"
-#include "..\SDK\Invoke.h"
+#include "amx/amx.h"
+#include "plugincommon.h"
+// #include "..\SDK\Invoke.h"
 
-#include "utils\utils.h"
+#include "utils.h"
 
 #include "Amxstring.hpp"
 #include "Tokenizer.hpp"

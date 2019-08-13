@@ -6,8 +6,8 @@
 #include <string>
 #include <vector>
 
-namespace tkz {
-
+namespace tkz
+{
 	enum class PropertyType {
 		NONE			= 0x0,
 		PROPERTY_NAME	= 0x1,

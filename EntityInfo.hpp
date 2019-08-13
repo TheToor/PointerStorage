@@ -1,10 +1,12 @@
 #ifndef ENTITYINFO_HPP
 #define ENTITYINFO_HPP
 
-#include "Enums.h"
 #include <string>
 
-class EntityInfo {
+#include "Enums.h"
+
+class EntityInfo
+{
 private:
 	std::string m_attributeName;
 	EntityDataType m_dataType;

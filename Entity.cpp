@@ -64,7 +64,7 @@ Entity::~Entity() {
 }
 
 bool Entity::setValue(const std::string& attributeName, void* value) {
-	auto& it = m_attributes.find(attributeName);
+	auto it = m_attributes.find(attributeName);
 	if (it != m_attributes.end()) {
 		it->second->setValue(value);
 		return true;
@@ -74,7 +74,7 @@ bool Entity::setValue(const std::string& attributeName, void* value) {
 }
 
 void* Entity::value(const std::string& attributeName) {
-	auto& it = m_attributes.find(attributeName);
+	auto it = m_attributes.find(attributeName);
 	if (it != m_attributes.end()) {
 		return it->second->value();
 	}
@@ -83,12 +83,13 @@ void* Entity::value(const std::string& attributeName) {
 }
 
 
-EntityInfo* Entity::findEntityInfo(const std::string& attributeName) const {
-	auto& it = m_attributes.find(attributeName);
-	if (it == m_attributes.end())
-		return nullptr;
+EntityInfo * Entity::findEntityInfo(const std::string& attributeName) const {
+	auto it = m_attributes.find(attributeName);
+	if (it != m_attributes.end()) {
+		return it->second;
+	}
 
-	return it->second;
+	return nullptr;
 }
 
 Entity * Entity::clone() {

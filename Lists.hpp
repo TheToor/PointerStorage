@@ -1,16 +1,17 @@
 #ifndef LISTS_HPP
 #define LISTS_HPP
 
+#include <vector>
+#include <map>
+
 #include "Array.hpp"
 #include "Structure.hpp"
 #include "Entity.hpp"
 
-#include <vector>
-#include <map>
-
-namespace lscrp {
-
-	class Lists {
+namespace lscrp
+{
+	class Lists
+	{
 	private:
 		std::vector<Structure*> m_structureList;
 		std::map<int, Entity*> m_entities;

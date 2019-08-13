@@ -1,11 +1,11 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-#include "lscrp.h"
 #include <fstream>
 #include <exception>
 #include <set>
 
+#include "lscrp.h"
 
 typedef void(*logprintf_t)(char* format, ...);
 

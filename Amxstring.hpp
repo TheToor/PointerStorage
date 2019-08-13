@@ -1,10 +1,12 @@
 #ifndef AMXSTRING_HPP
 #define AMXSTRING_HPP
 
-#include "..\SDK\amx\amx.h"
 #include <string>
 
-class Amxstring {
+#include "amx/amx.h"
+
+class Amxstring
+{
 private:
 	char* m_string;
 	int m_size;
