@@ -34,14 +34,8 @@ N/A
 
 ### Build
 
-#### Windows
-
-1. Open "lscrp.sln" with Visual Studio
-2. Build project with Visual Studio
-
-#### Linux
-
-
+1. Navigate to "build" folder
+2. Run "cmake --build . --config Release" or "cmake --build . --config Debug"
 
 ## Usage
 
